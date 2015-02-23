@@ -2,33 +2,43 @@
 
 An automated build environment for static websites making front-end development a breeze.
 
-## How to use gulp-jade-sass-static
+## Quick Start
 
-    # Clone this repo
-    $ git clone https://github.com/epilande/gulp-jade-sass-static.git
-    $ cd gulp-jade-sass-static
+Clone this repo
+```bash
+$ git clone https://github.com/epilande/gulp-jade-sass-static.git
+$ cd gulp-jade-sass-static
+```
 
-    # Install dependencies
-    $ npm install
+Install dependencies
+```bash
+$ npm install
+```
 
-    # Start default tasks for development
-    $ gulp
+Start tasks for development
+```bash
+$ gulp dev
+```
 
-Open your web browser and navigate to [http://localhost:3000](http://localhost:3000)
+Open your web browser and navigate to [http://localhost:3001](http://localhost:3001)
 
-    # Build for production
-    $ gulp build
+---
 
 ## Directory Layout
 
     assets/           --> Contents are compiled, minified, copied, etc.. to the public directory
+      images/
       js/               --> Javascript files
       sass/             --> Sass files
-      views/            --> Jade files
-        layout.jade       --> Doctype, html, head, body template
-        index.jade        --> Main page
-        partials/         --> View partials
-    public/           --> Static assets. Generated files are added here. No work should be done in this directory
     bower.json        --> For bower to install bower components
-    gulpfile.json     --> Gulp config
+    gulp/
+      tasks/            --> Individual task files
+      util/             --> Helpers
+      config.js         --> File Src and dest configuration
+    gulpfile.js
     package.json      --> For npm to install node modules
+    public/           --> Static assets. Generated files are added here. No work should be done in this directory
+    views/            --> Jade files
+      layout.jade       --> Doctype, html, head, body template
+      index.jade        --> Main page
+      partials/         --> View partials
