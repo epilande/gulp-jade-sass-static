@@ -27,6 +27,8 @@
   "dependencies": {},
   "scripts": {
     "prestart": "npm install",
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "dev": "gulp dev",
+    "prod": "gulp prod"
   }
 }
